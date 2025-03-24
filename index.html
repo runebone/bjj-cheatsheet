@@ -2,25 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Blog</title>
-  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
-  <style>
-    body { font-family: sans-serif; max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
-    nav a { margin-right: 1rem; color: blue; cursor: pointer; text-decoration: underline; }
-    #content { margin-top: 2rem; }
-  </style>
+  <title>BJJ Cheatsheet</title>
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
 </head>
 <body>
 
-  <h1>My Blog</h1>
+  <h1>BJJ Cheatsheet</h1>
   <nav>
-    <a hx-get="posts-list.html" hx-target="#content">Blog</a>
-    <a hx-get="about.html" hx-target="#content">About</a>
-    <a hx-get="contact.html" hx-target="#content">Contact</a>
+    <a hx-get="navigation.html" hx-target="#content">Navigation</a>
   </nav>
 
   <div id="content">
-    <p>BJJ Cheatsheet.</p>
+    <p>Lorem Ipsum Content</p>
   </div>
 
 </body>
