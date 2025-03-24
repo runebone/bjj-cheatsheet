@@ -59,13 +59,12 @@
 <body>
 
   <h1>BJJ Cheatsheet</h1>
-  <img src="img/cj.png" style="max-width: 150px; display: block; margin: 0 auto 1rem;" />
+  <img src="img/cj.png" style="width: 100%; height: auto;" />
   <nav>
     <a hx-get="navigation.html" hx-target="#content">Navigation</a>
   </nav>
 
-  <div id="content">
-    <p>Lorem Ipsum Content</p>
+  <div id="content" hx-get="navigation.html" hx-trigger="load">
   </div>
 
 </body>
